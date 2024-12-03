@@ -1,5 +1,4 @@
 export interface Post {
-  [x: string]: SanityImageSource;
   title: string
   slug: { current: string };
   publishedAt: string;
@@ -10,6 +9,7 @@ export interface Post {
   headings?: Array<HTMLHeadElement | string>;
   comments?: Array<Comment>;
 }
+
 
 export interface Tag {
   name: string;
